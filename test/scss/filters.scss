@@ -1,0 +1,21 @@
+@import "compass/css3/filter";
+
+.blur {
+  @include filter(blur(5px));
+}
+.brightness {
+  @include filter(brightness(0.2));
+}
+.hue-rotate {
+  @include filter(hue-rotate(20deg));
+}
+.contrast {
+  @include filter(contrast(150%));
+}
+//...sass have this function...so
+//.grayscale {
+//  @include filter(grayscale(150%));
+//}
+.sepia {
+  @include filter(sepia(150%));
+}

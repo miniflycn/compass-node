@@ -1,0 +1,29 @@
+.default-single-text-shadow {
+  text-shadow: 0px 0px 1px #aaa; }
+
+.none {
+  text-shadow: none; }
+
+.color-only {
+  text-shadow: 0px 0px 1px #ccc; }
+
+.color-first-with-params {
+  text-shadow: 2px 2px 5px #ccc, 2px 2px 5px 2px #ccc;
+  text-shadow: 2px 2px 5px 2px #ccc, 2px 2px 5px 2px #ccc; }
+
+.color-last-with-params {
+  text-shadow: 2px 2px 5px #ccc, 2px 2px 5px 2px #ccc;
+  text-shadow: 2px 2px 5px 2px #ccc, 2px 2px 5px 2px #ccc; }
+
+.default-text-shadow {
+  text-shadow: 0px 0px 1px #aaa; }
+
+.multiple-text-shadows-with-default {
+  text-shadow: 0px 0px 1px #aaa, 2px 2px 5px #222; }
+
+.multiple-text-shadows {
+  text-shadow: 4px 4px 10px #444, 2px 2px 5px #222; }
+
+.multiple-text-shadows-with-spread {
+  text-shadow: 4px 4px 10px #444, 4px 4px 10px 1px #444, 2px 2px 5px #222, 2px 2px 5px 3px #222;
+  text-shadow: 4px 4px 10px 1px #444, 4px 4px 10px 1px #444, 2px 2px 5px 3px #222, 2px 2px 5px 3px #222; }
