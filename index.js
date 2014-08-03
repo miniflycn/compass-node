@@ -3,7 +3,7 @@ var sass = require('node-sass')
   , path = require('path');
 
 function render(file, opts) {
-  var data = fs.readFileSync(file)
+  var data = '@import "compass-prefix";\n' + fs.readFileSync(file)
     , dirname = path.dirname(file);
   sass.render({
     data: data,
@@ -11,6 +11,7 @@ function render(file, opts) {
       dirname,
       path.join(__dirname, 'frameworks/stylesheets')
     ],
+    imagePath: './images',
     success: opts.success,
     error: opts.error
   });

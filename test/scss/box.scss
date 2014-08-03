@@ -1,0 +1,66 @@
+@import "compass/css3/box";
+
+.hbox {
+  @include display-box;
+  @include box-orient;
+  @include box-align;
+  
+  & > * {
+    @include box-flex;
+  }
+}
+
+
+.vbox {
+  @include display-box;
+  @include box-orient(vertical);
+  @include box-align;
+  
+  & > * {
+    @include box-flex;
+  }
+}
+
+.spacer {
+  @include box-flex(1);
+}
+
+.reverse {
+  @include box-direction(reverse);
+}
+
+.box-flex-0 {
+  @include box-flex(0);
+}
+
+.box-flex-1 {
+  @include box-flex(1);
+}
+
+.box-flex-2 {
+  @include box-flex(2);
+}
+
+.box-flex-group-0 {
+  @include box-flex-group(0);
+}
+
+.box-flex-group-1 {
+  @include box-flex-group(1);
+}
+
+.box-flex-group-2 {
+  @include box-flex-group(2);
+}
+
+.start {
+  @include box-pack(start);
+}
+
+.end {
+  @include box-pack(end);
+}
+
+.center {
+  @include box-pack(center);
+}

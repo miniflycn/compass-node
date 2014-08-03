@@ -1,0 +1,126 @@
+@import "compass/css3/images";
+
+$experimental-support-for-svg: true;
+.bg-shortcut-simple-image {
+  @include background(#fff url('foo.png'));
+}
+
+.bg-shortcut-linear-gradient {
+  @include background(#fff linear-gradient(top left, #ddd, #aaa));
+}
+
+.bg-shortcut-radial-gradient {
+  @include background(#fff radial-gradient(center center, #ddd, #aaa 100px));
+}
+
+.bg-linear-gradient-angle-svg {
+  @include background-image(linear-gradient(-45deg, blue, black));
+}
+
+.bg-linear-gradient-angle2-svg {
+  @include background-image(linear-gradient(top left, blue, black));
+}
+
+.bg-all-gradient-types-with-simplification {
+  @include background-with-css2-fallback(image-url("4x6.png"), linear-gradient(top left, #ddd, #aaa), radial-gradient(center center, #ddd, #aaa 100px), #ffcc00);
+}
+
+.bg-simple-image {
+  @include background-image(url('foo.png'));
+}
+
+.bg-linear-gradient {
+  @include background-image(linear-gradient(top left, #ddd, #aaa));
+}
+
+.bg-linear-gradient-pixel-stop-from-top {
+  @include background-image(linear-gradient(top, #ddd 10px, #aaa 40px));
+}
+
+.bg-linear-gradient-pixel-stop-from-left {
+  @include background-image(linear-gradient(left, #ddd 10px, #aaa 40px));
+}
+
+.transparent-in-linear-gradient {
+  @include background-image(#fff linear-gradient(top left, transparent, #aaa));
+}
+
+.bg-radial-gradient {
+  @include background-image(radial-gradient(center center, #ddd, transparent 100px));
+}
+
+.bg-linear-gradient-with-angle {
+  @include background-image(linear-gradient(-45deg, #ddd, #aaa));
+}
+
+.bg-radial-gradient-with-angle-and-shape {
+  @include background-image(radial-gradient(ellipse cover, #ddd, #aaa 100px));
+}
+
+.bg-all-gradient-types {
+  @include background-image(image-url("4x6.png"), linear-gradient(top left, #ddd, #aaa), radial-gradient(center center, #ddd, #aaa 100px));
+}
+
+.border-image-gradient {
+  @include border-image(radial-gradient(#0f0,#f00 100px) 100 stretch);
+}
+
+.direct-list-image-plain {
+  @include list-style-image(image-url("4x6.png"));
+}
+
+.shorthand-list-image-plain {
+  @include list-style(outside image-url("4x6.png"));
+}
+
+.direct-list-image-with-gradient {
+  @include list-style-image(radial-gradient(lime, red 10px));
+}
+
+.shorthand-list-image-with-gradient {
+  // Note: I haven't seen a browser render this correctly, but they should eventually.
+  @include list-style(outside radial-gradient(lime, red 10px));
+}
+
+.content-plain {
+  @include content("asdf");
+}
+
+.content-with-gradient {
+  @include content(radial-gradient(lime, red 10px));
+}
+
+$experimental-support-for-svg: false
+
+.bg-linear-gradient-no-position {
+  @include background-image(linear-gradient(#ddd, #aaa));
+}
+
+.bg-radial-gradient-no-position {
+  @include background-image(radial-gradient(#ddd, #aaa 100px));
+}
+
+.image-fallback {
+  @include background-image(image(radial-gradient(#ddd, #aaa 100px), image-url("4x6.png"), #c00));
+}
+
+.cross-fade {
+  @include background-image(cross-fade(radial-gradient(#ddd, #aaa 100px), image-url("4x6.png")));
+}
+
+.unknown-function-wrapper {
+  @include background(foo(radial-gradient(#ddd, #aaa 100px)));
+}
+
+.ie-horizontal-filter {
+  @include filter-gradient(white, black, horizontal);
+}
+
+.ie-vertical-filter {
+  @include filter-gradient(white, black, vertical);
+}
+
+.ie-alpha-filter {
+  @include filter-gradient(rgba(#fff, 1), rgba(#fff, 0));
+}
+

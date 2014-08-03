@@ -1,0 +1,35 @@
+// it need set the real path
+$font-path : '/tmp/fonts/';
+$stylesheet-path : '/tmp/';
+
+@function -compass-space-list($list) {
+  $n : length($list);
+  $res : nth($list, 1);
+  @for $i from 2 to $n + 1 {
+    $res : $res + ' ' + nth($list, $i);
+  }
+  @return unquote($res);
+}
+
+@function font-url($url) {
+  $url : $font-path + $url;
+  @return unquote("url('") + $url + unquote("')"); 
+}
+
+@function font-files($url, $format) {
+  $url : $font-path + $url;
+  @return unquote("url('") + $url + unquote("')") + unquote(" format('") + $format + unquote("')");
+}
+
+@function stylesheet-url($url) {
+  $url : $stylesheet-path + $url;
+  @return unquote("url('") + $url + unquote("')");
+}
+
+@function -compass-list-size($list) {
+  @return length($list);
+}
+
+@function -webkit($linear) {
+  @return -webkit- + $linear;
+}

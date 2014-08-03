@@ -21,6 +21,9 @@ describe('css3', function () {
         success: function (css) {
           compareLine(css, './test/css/background-clip.css');
           done();
+        },
+        error: function (error) {
+          console.log(error);
         }
       })
     });
@@ -62,7 +65,16 @@ describe('css3', function () {
     });
   });
 
-  // TODO box
+  describe('box', function () {
+    it('should xxx', function (done) {
+      compass.render('./test/scss/box.scss', {
+        success: function (css) {
+          compareLine(css, './test/css/box.css');
+          done();
+        }
+      });
+    });
+  });
 
   describe('columns', function () {
     it('should xxx', function (done) {
@@ -87,7 +99,16 @@ describe('css3', function () {
     });
   });
 
-  // TODO fonts
+  describe('fonts', function () {
+    it('should xxx', function (done) {
+      compass.render('./test/scss/fonts.scss', {
+        success: function (css) {
+          compareLine(css, './test/css/fonts.css');
+          done();
+        }
+      });
+    });
+  });
 
   describe('force-wrap', function () {
     it('should xxx', function (done) {
@@ -100,7 +121,20 @@ describe('css3', function () {
     });
   });
 
-  // TODO gradients
+  // TODO gradients(CSS3)
+  // describe('gradients', function () {
+  //   it('should xxx', function (done) {
+  //     compass.render('./test/scss/gradients.scss', {
+  //       success: function (css) {
+  //         compareLine(css, './test/css/gradients.css');
+  //         done();
+  //       },
+  //       error: function (error) {
+  //         console.log(error);
+  //       }
+  //     });
+  //   });
+  // });
 
   // TODO grid-background
 
@@ -117,7 +151,17 @@ describe('css3', function () {
 
   // TODO image_size
 
-  // TODO images (need preprcessing)
+  // TODO images
+  // describe('images', function () {
+  //   it('should xxx', function (done) {
+  //     compass.render('./test/scss/images.scss', {
+  //       success: function (css) {
+  //         compareLine(css, './test/css/images.css');
+  //         done();
+  //       }
+  //     });
+  //   });
+  // });
 
   // TODO layout
 
@@ -145,7 +189,7 @@ describe('css3', function () {
     });
   });
 
-  // TODO pie
+  // TODO pie(CSS3)
 
   // TODO print
 
@@ -179,9 +223,9 @@ describe('css3', function () {
     });
   });
 
-  // TODO transform
+  // TODO transform(CSS3)
 
-  // TODO transition
+  // TODO transition(CSS3)
 
   describe('user-interface', function () {
     it('should xxx', function (done) {
