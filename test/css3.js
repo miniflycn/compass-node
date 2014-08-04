@@ -2,13 +2,13 @@ var compass = require('../')
   , fs = require('fs');
 
 function compare(css, file) {
-  css = css.replace(/\n$/, '');
-  css.should.equal(fs.readFileSync(file, { encoding: 'utf8' }).replace(/\n$/, ''));
+  css = css.replace(/\r?\n$/, '');
+  css.should.equal(fs.readFileSync(file, { encoding: 'utf8' }).replace(/\r?\n$/, '').replace(/\r/g, ''));
 }
 
 function compareLine(css, file) {
-  css = css.replace(/\n$/, '').split('\n');
-  file = fs.readFileSync(file, { encoding: 'utf8' }).replace(/\n$/, '').split('\n');
+  css = css.replace(/\r?\n$/, '').split('\n');
+  file = fs.readFileSync(file, { encoding: 'utf8' }).replace(/\r?\n$/, '').split(/\r?\n/);
   css.forEach(function (line, i) {
     line.should.equal(file[i]);
   });
@@ -226,6 +226,17 @@ describe('css3', function () {
   // TODO transform(CSS3)
 
   // TODO transition(CSS3)
+
+  describe('transition', function () {
+    it('should xxx', function (done) {
+      compass.render('./test/scss/transition.scss', {
+        success: function (css) {
+          compareLine(css, './test/css/transition.css');
+          done();
+        }
+      });
+    });
+  });
 
   describe('user-interface', function () {
     it('should xxx', function (done) {

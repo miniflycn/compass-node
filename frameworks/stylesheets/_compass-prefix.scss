@@ -33,3 +33,9 @@ $stylesheet-path : '/tmp/';
 @function -webkit($linear) {
   @return -webkit- + $linear;
 }
+
+@function elements-of-type($type) {
+  @if $type == html5-block {
+    @return article, aside, detail, figcaption, figure, footer, header, hgroup, menu, nav, section, summary;
+  }
+}
