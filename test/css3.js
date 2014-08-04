@@ -225,8 +225,6 @@ describe('css3', function () {
 
   // TODO transform(CSS3)
 
-  // TODO transition(CSS3)
-
   describe('transition', function () {
     it('should xxx', function (done) {
       compass.render('./test/scss/transition.scss', {
