@@ -1,4 +1,21 @@
-node-compass
+compass-node
 ============
 
-> 正在努力开发中......
+Install
+-------
+
+> $ npm install compass-node
+
+Usage
+-----
+
+```javascript
+var compass = require('compass-node');
+
+compass.render('./test.scss', {
+  success: function (css) {
+    // the result string
+    console.log(css);
+  }
+});
+```
