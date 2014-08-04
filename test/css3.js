@@ -102,6 +102,8 @@ describe('css3', function () {
   describe('fonts', function () {
     it('should xxx', function (done) {
       compass.render('./test/scss/fonts.scss', {
+        css: '/tmp/',
+        font: '/tmp/fonts/',
         success: function (css) {
           compareLine(css, './test/css/fonts.css');
           done();
@@ -126,7 +128,7 @@ describe('css3', function () {
   //   it('should xxx', function (done) {
   //     compass.render('./test/scss/gradients.scss', {
   //       success: function (css) {
-  //         compareLine(css, './test/css/gradients.css');
+  //         compare(css, './test/css/gradients.css');
   //         done();
   //       },
   //       error: function (error) {
@@ -151,20 +153,19 @@ describe('css3', function () {
 
   // TODO image_size
 
-  // TODO images
-  // describe('images', function () {
-  //   it('should xxx', function (done) {
-  //     compass.render('./test/scss/images.scss', {
-  //       success: function (css) {
-  //         compareLine(css, './test/css/images.css');
-  //         done();
-  //       }
-  //     });
-  //   });
-  // });
+  describe('images', function () {
+    it('should xxx', function (done) {
+      compass.render('./test/scss/images.scss', {
+        httpImagesPath: '/images/',
+        success: function (css) {
+          compareLine(css, './test/css/images.css');
+          done();
+        }
+      });
+    });
+  });
 
   // TODO layout
-
   describe('legacy_clearfix', function () {
     it('should xxx', function (done) {
       compass.render('./test/scss/legacy_clearfix.scss', {
@@ -223,7 +224,16 @@ describe('css3', function () {
     });
   });
 
-  // TODO transform(CSS3)
+  describe('transform', function () {
+    it('should xxx', function (done) {
+      compass.render('./test/scss/transform.scss', {
+        success: function (css) {
+          compareLine(css, './test/css/transform.css');
+          done();
+        }
+      });
+    });
+  });
 
   describe('transition', function () {
     it('should xxx', function (done) {

@@ -1,6 +1,4 @@
 // it need set the real path
-$font-path : '/tmp/fonts/';
-$stylesheet-path : '/tmp/';
 
 @function -compass-space-list($list) {
   $n : length($list);
@@ -12,17 +10,24 @@ $stylesheet-path : '/tmp/';
 }
 
 @function font-url($url) {
-  $url : $font-path + $url;
+  $url : $compass-font-path + $url;
   @return unquote("url('") + $url + unquote("')"); 
 }
 
 @function font-files($url, $format) {
-  $url : $font-path + $url;
+  $url : $compass-font-path + $url;
   @return unquote("url('") + $url + unquote("')") + unquote(" format('") + $format + unquote("')");
 }
 
 @function stylesheet-url($url) {
-  $url : $stylesheet-path + $url;
+  $url : $compass-stylesheet-path + $url;
+  @return unquote("url('") + $url + unquote("')");
+}
+
+@function image-url($url) {
+  @if str-index($url, '/') == 1 { @return unquote("url('") + $url + unquote("')"); }
+  @if str-index($url, 'http') == 1 { @return unquote("url(") + $url + unquote(")"); }
+  $url : $compass-image-path + $url;
   @return unquote("url('") + $url + unquote("')");
 }
 
@@ -30,8 +35,22 @@ $stylesheet-path : '/tmp/';
   @return length($list);
 }
 
-@function -webkit($linear) {
-  @return -webkit- + $linear;
+@function prefixed($type, $list) {
+  $m : length($list);
+  @for $j from 1 to $m + 1 {
+    $background : nth($list, $j);
+    $n : length($background);
+    @for $i from 1 to $n + 1 {
+      $cur : nth($background, $i);
+      @if type-of($cur) == string {
+        @if str-index($cur, 'linear-gradient(') == 1
+          or str-index($cur, 'radial-gradient(') == 1 { 
+            @return true; 
+          }
+      }
+    }
+  }
+  @return false;
 }
 
 @function elements-of-type($type) {

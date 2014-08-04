@@ -5,7 +5,8 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
-    "node-sass": "^0.9.3"
+    "node-sass": "^0.9.3",
+    "utils-merge": "^1.0.0"
   },
   "devDependencies": {
     "mocha": "^1.21.3",
