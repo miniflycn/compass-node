@@ -1,0 +1,15 @@
+@import "compass/reset";
+
+// Turn off the display for both of these classes
+.unregistered-only, .registered-only {
+  display: none
+}
+
+// Now turn only one of them back on depending on some other context.
+body.registered {
+  @include reset-display(unquote(".registered-only"));
+}
+
+body.unregistered {
+  @include reset-display(unquote(".unregistered-only"));
+}

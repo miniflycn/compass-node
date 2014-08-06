@@ -55,6 +55,21 @@
 
 @function elements-of-type($type) {
   @if $type == html5-block {
-    @return article, aside, detail, figcaption, figure, footer, header, hgroup, menu, nav, section, summary;
+    @return article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary;
   }
+  @if $type == inline {
+    @return a, abbr, acronym, audio, b , basefont, bdo, big, br, canvas, cite, code, command, datalist, dfn, em, embed, font, i, img, input, keygen, kbd, label, mark, meter, output, progress, q, rp, rt, ruby, s, samp, select, small, span, strike, strong, sub, sup, textarea, time, tt, u, var, video, wbr;
+  }
+  @if $type == block {
+    @return address, article, aside, blockquote, center, dir, div, dd, details, dl, dt, fieldset, figcaption, figure, form, footer, frameset, h1, h2, h3, h4, h5, h6, hr, header, hgroup, isindex, menu, nav, noframes, noscript, ol, p, pre, section, summary, ul;
+  }
+}
+
+@function append-selector($list, $selector) {
+  $n : length($list);
+  $res : compact(nth($list, 1) + $selector);
+  @for $i from 2 to $n + 1 {
+    $res : join($res, compact(nth($list, $i) + $selector));
+  }
+  @return $res;
 }

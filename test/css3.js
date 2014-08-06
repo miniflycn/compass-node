@@ -1,18 +1,6 @@
 var compass = require('../')
-  , fs = require('fs');
-
-function compare(css, file) {
-  css = css.replace(/\r?\n$/, '');
-  css.should.equal(fs.readFileSync(file, { encoding: 'utf8' }).replace(/\r?\n$/, '').replace(/\r/g, ''));
-}
-
-function compareLine(css, file) {
-  css = css.replace(/\r?\n$/, '').split('\n');
-  file = fs.readFileSync(file, { encoding: 'utf8' }).replace(/\r?\n$/, '').split(/\r?\n/);
-  css.forEach(function (line, i) {
-    line.should.equal(file[i]);
-  });
-}
+  , compare = require('./lib/compare')
+  , compareLine = require('./lib/compareLine');
 
 describe('css3', function () {
   describe('background-clip', function () {
@@ -207,8 +195,6 @@ describe('css3', function () {
 
   // TODO replacement
 
-  // TODO reset
-
   // TODO sprites
 
   // TODO stretching
@@ -256,9 +242,5 @@ describe('css3', function () {
       });
     });
   });
-
-  // TODO utilities
-
-  // TODO vertical_rhythm
 
 });

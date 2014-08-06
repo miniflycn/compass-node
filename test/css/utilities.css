@@ -21,11 +21,11 @@
 
 p.light {
   background-color: #b0201e;
-  color: black; }
+  color: #000; }
 
 p.dark {
   background-color: #5f1210;
-  color: white; }
+  color: #fff; }
 
 p.light-with-args {
   background-color: #b0201e;
