@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/miniflycn/node-compass.svg?branch=master)](https://travis-ci.org/miniflycn/url-har)
+[![Build Status](https://travis-ci.org/miniflycn/node-compass.svg?branch=master)](https://travis-ci.org/miniflycn/node-compass)
 compass-node
 ============
 
