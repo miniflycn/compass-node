@@ -100,17 +100,6 @@ describe('css3', function () {
     });
   });
 
-  describe('force-wrap', function () {
-    it('should xxx', function (done) {
-      compass.render('./test/scss/force-wrap.scss', {
-        success: function (css) {
-          compareLine(css, './test/css/force-wrap.css');
-          done();
-        }
-      });
-    });
-  });
-
   // TODO gradients(CSS3)
   // describe('gradients', function () {
   //   it('should xxx', function (done) {
@@ -153,20 +142,6 @@ describe('css3', function () {
     });
   });
 
-  // TODO layout
-  describe('legacy_clearfix', function () {
-    it('should xxx', function (done) {
-      compass.render('./test/scss/legacy_clearfix.scss', {
-        success: function (css) {
-          compareLine(css, './test/css/legacy_clearfix.css');
-          done();
-        }
-      });
-    });
-  });
-
-  // TODO lists
-
   describe('opacity', function () {
     it('should xxx', function (done) {
       compass.render('./test/scss/opacity.scss', {
@@ -180,8 +155,6 @@ describe('css3', function () {
 
   // TODO pie(CSS3)
 
-  // TODO print
-
   describe('regions', function () {
     it('should xxx', function (done) {
       compass.render('./test/scss/regions.scss', {
@@ -193,11 +166,7 @@ describe('css3', function () {
     });
   });
 
-  // TODO replacement
-
   // TODO sprites
-
-  // TODO stretching
 
   describe('text-shadow', function () {
     it('should xxx', function (done) {

@@ -1,0 +1,5 @@
+@import "compass/utilities/print";
+
+@include print-utilities;
+
+@include print-utilities(screen);

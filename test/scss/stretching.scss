@@ -1,0 +1,45 @@
+@import "compass/layout/stretching";
+
+.stretched-completely {
+  @include stretch;
+}
+
+.stretched-horizontally {
+  @include stretch-x;
+}
+
+.stretched-right {
+  @include stretch-x(0, 50%);
+}
+
+.left-pane {
+  @include stretch(0, 50%, 0, 0);
+}
+
+.stretched-left {
+  @include stretch-x(50%, 0);
+}
+
+.right-pane {
+  @include stretch(0, 0, 0, 50%);
+}
+
+.stretched-down {
+  @include stretch-y(0, 50%);
+}
+
+.top-pane {
+  @include stretch(0, 0, 50%, 0);
+}
+
+.stretched-up {
+  @include stretch-y(50%, 0);
+}
+
+.bottom-pane {
+  @include stretch(50%, 0, 0, 0);
+}
+
+.viewport {
+  @include stretch(10px, 20px, 30px, 40px);
+}

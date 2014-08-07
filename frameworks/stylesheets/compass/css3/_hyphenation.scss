@@ -30,7 +30,7 @@
   }
   @else {
     @include experimental(word-break, $value,
-      false, false, false, -ms, not -khtml, official
+      false, false, false, -ms, false, official
     );
   }
 }

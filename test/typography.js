@@ -14,4 +14,40 @@ describe('typography', function () {
     });
   });
 
+  describe('force-wrap', function () {
+    it('should xxx', function (done) {
+      compass.render('./test/scss/force-wrap.scss', {
+        success: function (css) {
+          compareLine(css, './test/css/force-wrap.css');
+          done();
+        }
+      });
+    });
+  });
+
+  // describe('lists', function () {
+  //   it('should xxx', function (done) {
+  //     compass.render('./test/scss/lists.scss', {
+  //       success: function (css) {
+  //         compareLine(css, './test/css/lists.css');
+  //         done();
+  //       }
+  //     });
+  //   });
+  // });
+
+  // describe('replacement', function () {
+  //   it('should xxx', function (done) {
+  //     compass.render('./test/scss/replacement.scss', {
+  //       success: function (css) {
+  //         compareLine(css, './test/css/replacement.css');
+  //         done();
+  //       },
+  //       error: function (error) {
+  //         console.log(error);
+  //       }
+  //     });
+  //   });
+  // });
+
 });

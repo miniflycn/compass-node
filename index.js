@@ -3,6 +3,14 @@ var sass = require('node-sass')
   , path = require('path')
   , merge = require('./lib/merge');
 
+function _fixPath(path) {
+  if (!/\/$/.test(path)) {
+    return path + '/';
+  } else {
+    return path;
+  }
+}
+
 /**
  * render(file, opts)
  * @param {String} file
@@ -23,9 +31,9 @@ function render(file, opts) {
     };
 
   param.data = [
-    '$compass-font-path : "' + font + '";',
-    '$compass-stylesheet-path : "' + css + '";',
-    '$compass-image-path : "' + image + '";',
+    '$compass-font-path : "' + _fixPath(font) + '";',
+    '$compass-stylesheet-path : "' + _fixPath(css) + '";',
+    '$compass-image-path : "' + _fixPath(image) + '";',
     '@import "compass-prefix";',
     data
   ].join('\n'); 

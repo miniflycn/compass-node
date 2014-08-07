@@ -73,3 +73,17 @@
   }
   @return $res;
 }
+
+@function is-url($url) {
+  @if str-index($url, http) != null or str-index($url, '/') != null {
+    @return true;
+  }
+  @return false;
+}
+
+@function opposite-position($pos) {
+  @if $pos == top { @return bottom; }
+  @if $pos == right { @return left; }
+  @if $pos == bottom { @return bottom; }
+  @if $pos == left { @return right; }
+}
