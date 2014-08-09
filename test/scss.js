@@ -1,6 +1,7 @@
 var Scss = require('../lib/scss')
   , fs = require('fs')
   , path = require('path')
+  , compare = require('./lib/compare')
   , compareLine = require('./lib/compareLine');
 
 describe('scss', function () {
@@ -8,7 +9,9 @@ describe('scss', function () {
     compareLine(
       new Scss(
         fs.readFileSync(path.join(__dirname, './scss/import.scss'), { encoding: 'utf8' }), 
-        [path.join(__dirname, './scss')]
+        {
+          includePaths: [path.join(__dirname, './scss')]
+        }
       ).getContext(),
       './test/scss/reset.scss'
     );

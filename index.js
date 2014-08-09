@@ -1,7 +1,8 @@
 var sass = require('node-sass')
   , fs = require('fs')
   , path = require('path')
-  , merge = require('./lib/merge');
+  , merge = require('./lib/merge')
+  , Scss = require('./lib/scss');
 
 function _fixPath(path) {
   if (!/\/$/.test(path)) {
@@ -21,14 +22,20 @@ function _fixPath(path) {
  */
 function render(file, opts) {
   opts = opts || {};
-  var data = opts.data || fs.readFileSync(file)
-    , includePaths = [path.dirname(file), path.join(__dirname, 'frameworks/stylesheets')]
+  var data = opts.data || fs.readFileSync(file, { encoding: 'utf8' })
+    , includePaths = [path.dirname(file)]
     , css = opts.css || 'css'
     , font = opts.font || 'font'
     , image = opts.httpImagesPath || '/images'
     , param = {
-      includePaths: includePaths
+      includePaths: [path.join(__dirname, 'frameworks/stylesheets')]
     };
+
+  data = new Scss(data, {
+    includePaths: opts.includePaths ? 
+      includePaths.concat(opts.includePaths) : 
+        includePaths
+  }).getContext();
 
   param.data = [
     '$compass-font-path : "' + _fixPath(font) + '";',
@@ -37,8 +44,6 @@ function render(file, opts) {
     '@import "compass-prefix";',
     data
   ].join('\n'); 
-  opts.includePaths &&
-    [].splice.apply(param.includePaths, [1, 0].concat(opts.includePaths));
 
   sass.render(merge(param, opts, [
     'success',
