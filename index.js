@@ -26,35 +26,39 @@ function render(file, opts) {
     , includePaths = [path.dirname(file)]
     , css = opts.css || 'css'
     , font = opts.font || 'font'
+    , imagePath = opts.imagePath || '/images'
     , image = opts.httpImagesPath || '/images'
+    , spriteDist = opts.spriteDist || '/images'
     , param = {
       includePaths: [path.join(__dirname, 'frameworks/stylesheets')]
     };
 
-  data = new Scss(data, {
+  new Scss(data, {
     includePaths: opts.includePaths ? 
       includePaths.concat(opts.includePaths) : 
-        includePaths
-  }).getContext();
+        includePaths,
+    spriteDist: spriteDist,
+    imagePath: imagePath
+  }).done(function (data) {
+    param.data = [
+      '$compass-font-path : "' + _fixPath(font) + '";',
+      '$compass-stylesheet-path : "' + _fixPath(css) + '";',
+      '$compass-image-path : "' + _fixPath(image) + '";',
+      '@import "compass-prefix";',
+      data
+    ].join('\n'); 
 
-  param.data = [
-    '$compass-font-path : "' + _fixPath(font) + '";',
-    '$compass-stylesheet-path : "' + _fixPath(css) + '";',
-    '$compass-image-path : "' + _fixPath(image) + '";',
-    '@import "compass-prefix";',
-    data
-  ].join('\n'); 
-
-  sass.render(merge(param, opts, [
-    'success',
-    'error',
-    'imagePath',
-    'outputStyle',
-    'precision',
-    'sourceComments',
-    'sourceMap',
-    'stats'
-  ]));
+    sass.render(merge(param, opts, [
+      'success',
+      'error',
+      'imagePath',
+      'outputStyle',
+      'precision',
+      'sourceComments',
+      'sourceMap',
+      'stats'
+    ]));
+  });
 }
 
 module.exports = {
