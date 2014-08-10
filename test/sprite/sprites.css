@@ -1,0 +1,36 @@
+#flags .us {
+  background: url('flag-30682c0f325.png') no-repeat;
+  x: -201;
+  y: -132;
+  width: 16;
+  height: 11; }
+#flags .au {
+  background: url('flag-30682c0f325.png') no-repeat;
+  x: -48;
+  y: 0;
+  width: 16;
+  height: 11; }
+#flags .ca {
+  background: url('flag-30682c0f325.png') no-repeat;
+  x: -80;
+  y: 0;
+  width: 16;
+  height: 11; }
+#flags .es {
+  background: url('flag-30682c0f325.png') no-repeat;
+  x: -64;
+  y: -100;
+  width: 16;
+  height: 11; }
+#flags .eg {
+  background: url('flag-30682c0f325.png') no-repeat;
+  x: 0;
+  y: -100;
+  width: 16;
+  height: 11; }
+#flags .ly {
+  background: url('flag-30682c0f325.png') no-repeat;
+  x: -64;
+  y: -144;
+  width: 16;
+  height: 11; }

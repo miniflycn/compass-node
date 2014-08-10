@@ -18,20 +18,4 @@ describe('scss', function () {
       });
     });
   });
-
-  // describe('sprite', function () {
-  //   it('should xxx', function (done) {
-  //     new Scss(
-  //       fs.readFileSync(path.join(__dirname, './sprite/sprites.scss'), { encoding: 'utf8' }), 
-  //       {
-  //         includePaths: [path.join(__dirname, './sprite')],
-  //         imagePath: path.join(__dirname, './images'),
-  //         spriteDist: __dirname
-  //       }
-  //     ).done(function (context) {
-  //       console.log(context);
-  //       done();
-  //     });
-  //   });
-  // });
 });
