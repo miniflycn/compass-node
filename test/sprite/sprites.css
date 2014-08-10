@@ -1,36 +1,1259 @@
 #flags .us {
-  background: url('flag-79aa9f2606a.png') no-repeat;
-  x: -201;
-  y: -132;
-  width: 16;
-  height: 11; }
+  background: url('flag-79aa9f2606a.png') no-repeat -201px -132px;
+  width: 16px;
+  height: 11px; }
 #flags .au {
-  background: url('flag-79aa9f2606a.png') no-repeat;
-  x: -48;
-  y: 0;
-  width: 16;
-  height: 11; }
+  background: url('flag-79aa9f2606a.png') no-repeat -48px 0;
+  width: 16px;
+  height: 11px; }
 #flags .ca {
-  background: url('flag-79aa9f2606a.png') no-repeat;
-  x: -80;
-  y: 0;
-  width: 16;
-  height: 11; }
+  background: url('flag-79aa9f2606a.png') no-repeat -80px 0;
+  width: 16px;
+  height: 11px; }
 #flags .es {
-  background: url('flag-79aa9f2606a.png') no-repeat;
-  x: -64;
-  y: -100;
-  width: 16;
-  height: 11; }
+  background: url('flag-79aa9f2606a.png') no-repeat -64px -100px;
+  width: 16px;
+  height: 11px; }
 #flags .eg {
-  background: url('flag-79aa9f2606a.png') no-repeat;
-  x: 0;
-  y: -100;
-  width: 16;
-  height: 11; }
+  background: url('flag-79aa9f2606a.png') no-repeat 0 -100px;
+  width: 16px;
+  height: 11px; }
 #flags .ly {
-  background: url('flag-79aa9f2606a.png') no-repeat;
-  x: -64;
-  y: -144;
-  width: 16;
-  height: 11; }
+  background: url('flag-79aa9f2606a.png') no-repeat -64px -144px;
+  width: 16px;
+  height: 11px; }
+
+.flag-me {
+  background: url('flag-79aa9f2606a.png') no-repeat 0 0;
+  width: 16px;
+  height: 12px; }
+
+.flag-kz {
+  background: url('flag-79aa9f2606a.png') no-repeat -16px 0;
+  width: 16px;
+  height: 11px; }
+
+.flag-af {
+  background: url('flag-79aa9f2606a.png') no-repeat 0 -12px;
+  width: 16px;
+  height: 11px; }
+
+.flag-ag {
+  background: url('flag-79aa9f2606a.png') no-repeat -16px -12px;
+  width: 16px;
+  height: 11px; }
+
+.flag-ai {
+  background: url('flag-79aa9f2606a.png') no-repeat -32px 0;
+  width: 16px;
+  height: 11px; }
+
+.flag-al {
+  background: url('flag-79aa9f2606a.png') no-repeat -32px -11px;
+  width: 16px;
+  height: 11px; }
+
+.flag-am {
+  background: url('flag-79aa9f2606a.png') no-repeat 0 -23px;
+  width: 16px;
+  height: 11px; }
+
+.flag-an {
+  background: url('flag-79aa9f2606a.png') no-repeat -16px -23px;
+  width: 16px;
+  height: 11px; }
+
+.flag-ao {
+  background: url('flag-79aa9f2606a.png') no-repeat -32px -23px;
+  width: 16px;
+  height: 11px; }
+
+.flag-ar {
+  background: url('flag-79aa9f2606a.png') no-repeat 0 -34px;
+  width: 16px;
+  height: 11px; }
+
+.flag-as {
+  background: url('flag-79aa9f2606a.png') no-repeat -16px -34px;
+  width: 16px;
+  height: 11px; }
+
+.flag-at {
+  background: url('flag-79aa9f2606a.png') no-repeat -32px -34px;
+  width: 16px;
+  height: 11px; }
+
+.flag-au {
+  background: url('flag-79aa9f2606a.png') no-repeat -48px 0;
+  width: 16px;
+  height: 11px; }
+
+.flag-aw {
+  background: url('flag-79aa9f2606a.png') no-repeat -48px -11px;
+  width: 16px;
+  height: 11px; }
+
+.flag-ax {
+  background: url('flag-79aa9f2606a.png') no-repeat -48px -22px;
+  width: 16px;
+  height: 11px; }
+
+.flag-az {
+  background: url('flag-79aa9f2606a.png') no-repeat -48px -33px;
+  width: 16px;
+  height: 11px; }
+
+.flag-ba {
+  background: url('flag-79aa9f2606a.png') no-repeat 0 -45px;
+  width: 16px;
+  height: 11px; }
+
+.flag-bb {
+  background: url('flag-79aa9f2606a.png') no-repeat -16px -45px;
+  width: 16px;
+  height: 11px; }
+
+.flag-bd {
+  background: url('flag-79aa9f2606a.png') no-repeat -32px -45px;
+  width: 16px;
+  height: 11px; }
+
+.flag-be {
+  background: url('flag-79aa9f2606a.png') no-repeat -48px -45px;
+  width: 16px;
+  height: 11px; }
+
+.flag-bf {
+  background: url('flag-79aa9f2606a.png') no-repeat -64px 0;
+  width: 16px;
+  height: 11px; }
+
+.flag-bg {
+  background: url('flag-79aa9f2606a.png') no-repeat -64px -11px;
+  width: 16px;
+  height: 11px; }
+
+.flag-bh {
+  background: url('flag-79aa9f2606a.png') no-repeat -64px -22px;
+  width: 16px;
+  height: 11px; }
+
+.flag-bi {
+  background: url('flag-79aa9f2606a.png') no-repeat -64px -33px;
+  width: 16px;
+  height: 11px; }
+
+.flag-bj {
+  background: url('flag-79aa9f2606a.png') no-repeat -64px -44px;
+  width: 16px;
+  height: 11px; }
+
+.flag-bm {
+  background: url('flag-79aa9f2606a.png') no-repeat 0 -56px;
+  width: 16px;
+  height: 11px; }
+
+.flag-bn {
+  background: url('flag-79aa9f2606a.png') no-repeat -16px -56px;
+  width: 16px;
+  height: 11px; }
+
+.flag-bo {
+  background: url('flag-79aa9f2606a.png') no-repeat -32px -56px;
+  width: 16px;
+  height: 11px; }
+
+.flag-br {
+  background: url('flag-79aa9f2606a.png') no-repeat -48px -56px;
+  width: 16px;
+  height: 11px; }
+
+.flag-bs {
+  background: url('flag-79aa9f2606a.png') no-repeat -64px -56px;
+  width: 16px;
+  height: 11px; }
+
+.flag-bt {
+  background: url('flag-79aa9f2606a.png') no-repeat 0 -67px;
+  width: 16px;
+  height: 11px; }
+
+.flag-bv {
+  background: url('flag-79aa9f2606a.png') no-repeat -16px -67px;
+  width: 16px;
+  height: 11px; }
+
+.flag-bw {
+  background: url('flag-79aa9f2606a.png') no-repeat -32px -67px;
+  width: 16px;
+  height: 11px; }
+
+.flag-by {
+  background: url('flag-79aa9f2606a.png') no-repeat -48px -67px;
+  width: 16px;
+  height: 11px; }
+
+.flag-bz {
+  background: url('flag-79aa9f2606a.png') no-repeat -64px -67px;
+  width: 16px;
+  height: 11px; }
+
+.flag-ca {
+  background: url('flag-79aa9f2606a.png') no-repeat -80px 0;
+  width: 16px;
+  height: 11px; }
+
+.flag-catalonia {
+  background: url('flag-79aa9f2606a.png') no-repeat -80px -11px;
+  width: 16px;
+  height: 11px; }
+
+.flag-cc {
+  background: url('flag-79aa9f2606a.png') no-repeat -80px -22px;
+  width: 16px;
+  height: 11px; }
+
+.flag-cd {
+  background: url('flag-79aa9f2606a.png') no-repeat -80px -33px;
+  width: 16px;
+  height: 11px; }
+
+.flag-cf {
+  background: url('flag-79aa9f2606a.png') no-repeat -80px -44px;
+  width: 16px;
+  height: 11px; }
+
+.flag-cg {
+  background: url('flag-79aa9f2606a.png') no-repeat -80px -55px;
+  width: 16px;
+  height: 11px; }
+
+.flag-ch {
+  background: url('flag-79aa9f2606a.png') no-repeat -80px -66px;
+  width: 11px;
+  height: 11px; }
+
+.flag-ci {
+  background: url('flag-79aa9f2606a.png') no-repeat 0 -78px;
+  width: 16px;
+  height: 11px; }
+
+.flag-ck {
+  background: url('flag-79aa9f2606a.png') no-repeat -16px -78px;
+  width: 16px;
+  height: 11px; }
+
+.flag-cl {
+  background: url('flag-79aa9f2606a.png') no-repeat -32px -78px;
+  width: 16px;
+  height: 11px; }
+
+.flag-cm {
+  background: url('flag-79aa9f2606a.png') no-repeat -48px -78px;
+  width: 16px;
+  height: 11px; }
+
+.flag-cn {
+  background: url('flag-79aa9f2606a.png') no-repeat -64px -78px;
+  width: 16px;
+  height: 11px; }
+
+.flag-co {
+  background: url('flag-79aa9f2606a.png') no-repeat -80px -78px;
+  width: 16px;
+  height: 11px; }
+
+.flag-cr {
+  background: url('flag-79aa9f2606a.png') no-repeat -96px 0;
+  width: 16px;
+  height: 11px; }
+
+.flag-cs {
+  background: url('flag-79aa9f2606a.png') no-repeat -96px -11px;
+  width: 16px;
+  height: 11px; }
+
+.flag-cu {
+  background: url('flag-79aa9f2606a.png') no-repeat -96px -22px;
+  width: 16px;
+  height: 11px; }
+
+.flag-cv {
+  background: url('flag-79aa9f2606a.png') no-repeat -96px -33px;
+  width: 16px;
+  height: 11px; }
+
+.flag-cx {
+  background: url('flag-79aa9f2606a.png') no-repeat -96px -44px;
+  width: 16px;
+  height: 11px; }
+
+.flag-cy {
+  background: url('flag-79aa9f2606a.png') no-repeat -96px -55px;
+  width: 16px;
+  height: 11px; }
+
+.flag-cz {
+  background: url('flag-79aa9f2606a.png') no-repeat -96px -66px;
+  width: 16px;
+  height: 11px; }
+
+.flag-de {
+  background: url('flag-79aa9f2606a.png') no-repeat -96px -77px;
+  width: 16px;
+  height: 11px; }
+
+.flag-dj {
+  background: url('flag-79aa9f2606a.png') no-repeat 0 -89px;
+  width: 16px;
+  height: 11px; }
+
+.flag-dk {
+  background: url('flag-79aa9f2606a.png') no-repeat -16px -89px;
+  width: 16px;
+  height: 11px; }
+
+.flag-dm {
+  background: url('flag-79aa9f2606a.png') no-repeat -32px -89px;
+  width: 16px;
+  height: 11px; }
+
+.flag-do {
+  background: url('flag-79aa9f2606a.png') no-repeat -48px -89px;
+  width: 16px;
+  height: 11px; }
+
+.flag-dz {
+  background: url('flag-79aa9f2606a.png') no-repeat -64px -89px;
+  width: 16px;
+  height: 11px; }
+
+.flag-ec {
+  background: url('flag-79aa9f2606a.png') no-repeat -80px -89px;
+  width: 16px;
+  height: 11px; }
+
+.flag-ee {
+  background: url('flag-79aa9f2606a.png') no-repeat -96px -89px;
+  width: 16px;
+  height: 11px; }
+
+.flag-eg {
+  background: url('flag-79aa9f2606a.png') no-repeat 0 -100px;
+  width: 16px;
+  height: 11px; }
+
+.flag-eh {
+  background: url('flag-79aa9f2606a.png') no-repeat -16px -100px;
+  width: 16px;
+  height: 11px; }
+
+.flag-england {
+  background: url('flag-79aa9f2606a.png') no-repeat -32px -100px;
+  width: 16px;
+  height: 11px; }
+
+.flag-er {
+  background: url('flag-79aa9f2606a.png') no-repeat -48px -100px;
+  width: 16px;
+  height: 11px; }
+
+.flag-es {
+  background: url('flag-79aa9f2606a.png') no-repeat -64px -100px;
+  width: 16px;
+  height: 11px; }
+
+.flag-et {
+  background: url('flag-79aa9f2606a.png') no-repeat -80px -100px;
+  width: 16px;
+  height: 11px; }
+
+.flag-europeanunion {
+  background: url('flag-79aa9f2606a.png') no-repeat -96px -100px;
+  width: 16px;
+  height: 11px; }
+
+.flag-fam {
+  background: url('flag-79aa9f2606a.png') no-repeat -112px 0;
+  width: 16px;
+  height: 11px; }
+
+.flag-fi {
+  background: url('flag-79aa9f2606a.png') no-repeat -112px -11px;
+  width: 16px;
+  height: 11px; }
+
+.flag-fj {
+  background: url('flag-79aa9f2606a.png') no-repeat -112px -22px;
+  width: 16px;
+  height: 11px; }
+
+.flag-fk {
+  background: url('flag-79aa9f2606a.png') no-repeat -112px -33px;
+  width: 16px;
+  height: 11px; }
+
+.flag-fm {
+  background: url('flag-79aa9f2606a.png') no-repeat -112px -44px;
+  width: 16px;
+  height: 11px; }
+
+.flag-fo {
+  background: url('flag-79aa9f2606a.png') no-repeat -112px -55px;
+  width: 16px;
+  height: 11px; }
+
+.flag-fr {
+  background: url('flag-79aa9f2606a.png') no-repeat -112px -66px;
+  width: 16px;
+  height: 11px; }
+
+.flag-ga {
+  background: url('flag-79aa9f2606a.png') no-repeat -112px -77px;
+  width: 16px;
+  height: 11px; }
+
+.flag-gb {
+  background: url('flag-79aa9f2606a.png') no-repeat -112px -88px;
+  width: 16px;
+  height: 11px; }
+
+.flag-gd {
+  background: url('flag-79aa9f2606a.png') no-repeat -112px -99px;
+  width: 16px;
+  height: 11px; }
+
+.flag-ge {
+  background: url('flag-79aa9f2606a.png') no-repeat 0 -111px;
+  width: 16px;
+  height: 11px; }
+
+.flag-gf {
+  background: url('flag-79aa9f2606a.png') no-repeat -16px -111px;
+  width: 16px;
+  height: 11px; }
+
+.flag-gh {
+  background: url('flag-79aa9f2606a.png') no-repeat -32px -111px;
+  width: 16px;
+  height: 11px; }
+
+.flag-gi {
+  background: url('flag-79aa9f2606a.png') no-repeat -48px -111px;
+  width: 16px;
+  height: 11px; }
+
+.flag-gl {
+  background: url('flag-79aa9f2606a.png') no-repeat -64px -111px;
+  width: 16px;
+  height: 11px; }
+
+.flag-gm {
+  background: url('flag-79aa9f2606a.png') no-repeat -80px -111px;
+  width: 16px;
+  height: 11px; }
+
+.flag-gn {
+  background: url('flag-79aa9f2606a.png') no-repeat -96px -111px;
+  width: 16px;
+  height: 11px; }
+
+.flag-gp {
+  background: url('flag-79aa9f2606a.png') no-repeat -112px -111px;
+  width: 16px;
+  height: 11px; }
+
+.flag-gq {
+  background: url('flag-79aa9f2606a.png') no-repeat -128px 0;
+  width: 16px;
+  height: 11px; }
+
+.flag-gr {
+  background: url('flag-79aa9f2606a.png') no-repeat -128px -11px;
+  width: 16px;
+  height: 11px; }
+
+.flag-gs {
+  background: url('flag-79aa9f2606a.png') no-repeat -128px -22px;
+  width: 16px;
+  height: 11px; }
+
+.flag-gt {
+  background: url('flag-79aa9f2606a.png') no-repeat -128px -33px;
+  width: 16px;
+  height: 11px; }
+
+.flag-gu {
+  background: url('flag-79aa9f2606a.png') no-repeat -128px -44px;
+  width: 16px;
+  height: 11px; }
+
+.flag-gw {
+  background: url('flag-79aa9f2606a.png') no-repeat -128px -55px;
+  width: 16px;
+  height: 11px; }
+
+.flag-gy {
+  background: url('flag-79aa9f2606a.png') no-repeat -128px -66px;
+  width: 16px;
+  height: 11px; }
+
+.flag-hk {
+  background: url('flag-79aa9f2606a.png') no-repeat -128px -77px;
+  width: 16px;
+  height: 11px; }
+
+.flag-hm {
+  background: url('flag-79aa9f2606a.png') no-repeat -128px -88px;
+  width: 16px;
+  height: 11px; }
+
+.flag-hn {
+  background: url('flag-79aa9f2606a.png') no-repeat -128px -99px;
+  width: 16px;
+  height: 11px; }
+
+.flag-hr {
+  background: url('flag-79aa9f2606a.png') no-repeat -128px -110px;
+  width: 16px;
+  height: 11px; }
+
+.flag-ht {
+  background: url('flag-79aa9f2606a.png') no-repeat 0 -122px;
+  width: 16px;
+  height: 11px; }
+
+.flag-hu {
+  background: url('flag-79aa9f2606a.png') no-repeat -16px -122px;
+  width: 16px;
+  height: 11px; }
+
+.flag-id-2 {
+  background: url('flag-79aa9f2606a.png') no-repeat -32px -122px;
+  width: 16px;
+  height: 11px; }
+
+.flag-ie {
+  background: url('flag-79aa9f2606a.png') no-repeat -48px -122px;
+  width: 16px;
+  height: 11px; }
+
+.flag-il {
+  background: url('flag-79aa9f2606a.png') no-repeat -64px -122px;
+  width: 16px;
+  height: 11px; }
+
+.flag-in {
+  background: url('flag-79aa9f2606a.png') no-repeat -80px -122px;
+  width: 16px;
+  height: 11px; }
+
+.flag-io {
+  background: url('flag-79aa9f2606a.png') no-repeat -96px -122px;
+  width: 16px;
+  height: 11px; }
+
+.flag-iq {
+  background: url('flag-79aa9f2606a.png') no-repeat -112px -122px;
+  width: 16px;
+  height: 11px; }
+
+.flag-ir {
+  background: url('flag-79aa9f2606a.png') no-repeat -128px -122px;
+  width: 16px;
+  height: 11px; }
+
+.flag-is {
+  background: url('flag-79aa9f2606a.png') no-repeat 0 -133px;
+  width: 16px;
+  height: 11px; }
+
+.flag-it {
+  background: url('flag-79aa9f2606a.png') no-repeat -16px -133px;
+  width: 16px;
+  height: 11px; }
+
+.flag-jm {
+  background: url('flag-79aa9f2606a.png') no-repeat -32px -133px;
+  width: 16px;
+  height: 11px; }
+
+.flag-jo {
+  background: url('flag-79aa9f2606a.png') no-repeat -48px -133px;
+  width: 16px;
+  height: 11px; }
+
+.flag-jp {
+  background: url('flag-79aa9f2606a.png') no-repeat -64px -133px;
+  width: 16px;
+  height: 11px; }
+
+.flag-ke {
+  background: url('flag-79aa9f2606a.png') no-repeat -80px -133px;
+  width: 16px;
+  height: 11px; }
+
+.flag-kg {
+  background: url('flag-79aa9f2606a.png') no-repeat -96px -133px;
+  width: 16px;
+  height: 11px; }
+
+.flag-kh {
+  background: url('flag-79aa9f2606a.png') no-repeat -112px -133px;
+  width: 16px;
+  height: 11px; }
+
+.flag-ki {
+  background: url('flag-79aa9f2606a.png') no-repeat -128px -133px;
+  width: 16px;
+  height: 11px; }
+
+.flag-km {
+  background: url('flag-79aa9f2606a.png') no-repeat -144px 0;
+  width: 16px;
+  height: 11px; }
+
+.flag-kn {
+  background: url('flag-79aa9f2606a.png') no-repeat -144px -11px;
+  width: 16px;
+  height: 11px; }
+
+.flag-kp {
+  background: url('flag-79aa9f2606a.png') no-repeat -144px -22px;
+  width: 16px;
+  height: 11px; }
+
+.flag-kr {
+  background: url('flag-79aa9f2606a.png') no-repeat -144px -33px;
+  width: 16px;
+  height: 11px; }
+
+.flag-kw {
+  background: url('flag-79aa9f2606a.png') no-repeat -144px -44px;
+  width: 16px;
+  height: 11px; }
+
+.flag-ky {
+  background: url('flag-79aa9f2606a.png') no-repeat -144px -55px;
+  width: 16px;
+  height: 11px; }
+
+.flag-ae {
+  background: url('flag-79aa9f2606a.png') no-repeat -144px -66px;
+  width: 16px;
+  height: 11px; }
+
+.flag-la {
+  background: url('flag-79aa9f2606a.png') no-repeat -144px -77px;
+  width: 16px;
+  height: 11px; }
+
+.flag-lb {
+  background: url('flag-79aa9f2606a.png') no-repeat -144px -88px;
+  width: 16px;
+  height: 11px; }
+
+.flag-lc {
+  background: url('flag-79aa9f2606a.png') no-repeat -144px -99px;
+  width: 16px;
+  height: 11px; }
+
+.flag-li {
+  background: url('flag-79aa9f2606a.png') no-repeat -144px -110px;
+  width: 16px;
+  height: 11px; }
+
+.flag-lk {
+  background: url('flag-79aa9f2606a.png') no-repeat -144px -121px;
+  width: 16px;
+  height: 11px; }
+
+.flag-lr {
+  background: url('flag-79aa9f2606a.png') no-repeat -144px -132px;
+  width: 16px;
+  height: 11px; }
+
+.flag-ls {
+  background: url('flag-79aa9f2606a.png') no-repeat 0 -144px;
+  width: 16px;
+  height: 11px; }
+
+.flag-lt {
+  background: url('flag-79aa9f2606a.png') no-repeat -16px -144px;
+  width: 16px;
+  height: 11px; }
+
+.flag-lu {
+  background: url('flag-79aa9f2606a.png') no-repeat -32px -144px;
+  width: 16px;
+  height: 11px; }
+
+.flag-lv {
+  background: url('flag-79aa9f2606a.png') no-repeat -48px -144px;
+  width: 16px;
+  height: 11px; }
+
+.flag-ly {
+  background: url('flag-79aa9f2606a.png') no-repeat -64px -144px;
+  width: 16px;
+  height: 11px; }
+
+.flag-ma {
+  background: url('flag-79aa9f2606a.png') no-repeat -80px -144px;
+  width: 16px;
+  height: 11px; }
+
+.flag-mc {
+  background: url('flag-79aa9f2606a.png') no-repeat -96px -144px;
+  width: 16px;
+  height: 11px; }
+
+.flag-md {
+  background: url('flag-79aa9f2606a.png') no-repeat -112px -144px;
+  width: 16px;
+  height: 11px; }
+
+.flag-ad {
+  background: url('flag-79aa9f2606a.png') no-repeat -128px -144px;
+  width: 16px;
+  height: 11px; }
+
+.flag-mg {
+  background: url('flag-79aa9f2606a.png') no-repeat -144px -144px;
+  width: 16px;
+  height: 11px; }
+
+.flag-mh {
+  background: url('flag-79aa9f2606a.png') no-repeat -160px 0;
+  width: 16px;
+  height: 11px; }
+
+.flag-mk {
+  background: url('flag-79aa9f2606a.png') no-repeat -160px -11px;
+  width: 16px;
+  height: 11px; }
+
+.flag-ml {
+  background: url('flag-79aa9f2606a.png') no-repeat -160px -22px;
+  width: 16px;
+  height: 11px; }
+
+.flag-mm {
+  background: url('flag-79aa9f2606a.png') no-repeat -160px -33px;
+  width: 16px;
+  height: 11px; }
+
+.flag-mn {
+  background: url('flag-79aa9f2606a.png') no-repeat -160px -44px;
+  width: 16px;
+  height: 11px; }
+
+.flag-mo {
+  background: url('flag-79aa9f2606a.png') no-repeat -160px -55px;
+  width: 16px;
+  height: 11px; }
+
+.flag-mp {
+  background: url('flag-79aa9f2606a.png') no-repeat -160px -66px;
+  width: 16px;
+  height: 11px; }
+
+.flag-mq {
+  background: url('flag-79aa9f2606a.png') no-repeat -160px -77px;
+  width: 16px;
+  height: 11px; }
+
+.flag-mr {
+  background: url('flag-79aa9f2606a.png') no-repeat -160px -88px;
+  width: 16px;
+  height: 11px; }
+
+.flag-ms {
+  background: url('flag-79aa9f2606a.png') no-repeat -160px -99px;
+  width: 16px;
+  height: 11px; }
+
+.flag-mt {
+  background: url('flag-79aa9f2606a.png') no-repeat -160px -110px;
+  width: 16px;
+  height: 11px; }
+
+.flag-mu {
+  background: url('flag-79aa9f2606a.png') no-repeat -160px -121px;
+  width: 16px;
+  height: 11px; }
+
+.flag-mv {
+  background: url('flag-79aa9f2606a.png') no-repeat -160px -132px;
+  width: 16px;
+  height: 11px; }
+
+.flag-mw {
+  background: url('flag-79aa9f2606a.png') no-repeat -160px -143px;
+  width: 16px;
+  height: 11px; }
+
+.flag-mx {
+  background: url('flag-79aa9f2606a.png') no-repeat 0 -155px;
+  width: 16px;
+  height: 11px; }
+
+.flag-my {
+  background: url('flag-79aa9f2606a.png') no-repeat -16px -155px;
+  width: 16px;
+  height: 11px; }
+
+.flag-mz {
+  background: url('flag-79aa9f2606a.png') no-repeat -32px -155px;
+  width: 16px;
+  height: 11px; }
+
+.flag-na {
+  background: url('flag-79aa9f2606a.png') no-repeat -48px -155px;
+  width: 16px;
+  height: 11px; }
+
+.flag-nc {
+  background: url('flag-79aa9f2606a.png') no-repeat -64px -155px;
+  width: 16px;
+  height: 11px; }
+
+.flag-ne {
+  background: url('flag-79aa9f2606a.png') no-repeat -80px -155px;
+  width: 16px;
+  height: 11px; }
+
+.flag-nf {
+  background: url('flag-79aa9f2606a.png') no-repeat -96px -155px;
+  width: 16px;
+  height: 11px; }
+
+.flag-ng {
+  background: url('flag-79aa9f2606a.png') no-repeat -112px -155px;
+  width: 16px;
+  height: 11px; }
+
+.flag-ni {
+  background: url('flag-79aa9f2606a.png') no-repeat -128px -155px;
+  width: 16px;
+  height: 11px; }
+
+.flag-nl {
+  background: url('flag-79aa9f2606a.png') no-repeat -144px -155px;
+  width: 16px;
+  height: 11px; }
+
+.flag-no {
+  background: url('flag-79aa9f2606a.png') no-repeat -160px -155px;
+  width: 16px;
+  height: 11px; }
+
+.flag-np {
+  background: url('flag-79aa9f2606a.png') no-repeat -176px 0;
+  width: 9px;
+  height: 11px; }
+
+.flag-nr {
+  background: url('flag-79aa9f2606a.png') no-repeat 0 -166px;
+  width: 16px;
+  height: 11px; }
+
+.flag-nu {
+  background: url('flag-79aa9f2606a.png') no-repeat -16px -166px;
+  width: 16px;
+  height: 11px; }
+
+.flag-nz {
+  background: url('flag-79aa9f2606a.png') no-repeat -32px -166px;
+  width: 16px;
+  height: 11px; }
+
+.flag-om {
+  background: url('flag-79aa9f2606a.png') no-repeat -48px -166px;
+  width: 16px;
+  height: 11px; }
+
+.flag-pa {
+  background: url('flag-79aa9f2606a.png') no-repeat -64px -166px;
+  width: 16px;
+  height: 11px; }
+
+.flag-pe {
+  background: url('flag-79aa9f2606a.png') no-repeat -80px -166px;
+  width: 16px;
+  height: 11px; }
+
+.flag-pf {
+  background: url('flag-79aa9f2606a.png') no-repeat -96px -166px;
+  width: 16px;
+  height: 11px; }
+
+.flag-pg {
+  background: url('flag-79aa9f2606a.png') no-repeat -112px -166px;
+  width: 16px;
+  height: 11px; }
+
+.flag-ph {
+  background: url('flag-79aa9f2606a.png') no-repeat -128px -166px;
+  width: 16px;
+  height: 11px; }
+
+.flag-pk {
+  background: url('flag-79aa9f2606a.png') no-repeat -144px -166px;
+  width: 16px;
+  height: 11px; }
+
+.flag-pl {
+  background: url('flag-79aa9f2606a.png') no-repeat -160px -166px;
+  width: 16px;
+  height: 11px; }
+
+.flag-pm {
+  background: url('flag-79aa9f2606a.png') no-repeat -185px 0;
+  width: 16px;
+  height: 11px; }
+
+.flag-pn {
+  background: url('flag-79aa9f2606a.png') no-repeat -185px -11px;
+  width: 16px;
+  height: 11px; }
+
+.flag-pr {
+  background: url('flag-79aa9f2606a.png') no-repeat -185px -22px;
+  width: 16px;
+  height: 11px; }
+
+.flag-ps {
+  background: url('flag-79aa9f2606a.png') no-repeat -185px -33px;
+  width: 16px;
+  height: 11px; }
+
+.flag-pt {
+  background: url('flag-79aa9f2606a.png') no-repeat -185px -44px;
+  width: 16px;
+  height: 11px; }
+
+.flag-pw {
+  background: url('flag-79aa9f2606a.png') no-repeat -185px -55px;
+  width: 16px;
+  height: 11px; }
+
+.flag-py {
+  background: url('flag-79aa9f2606a.png') no-repeat -185px -66px;
+  width: 16px;
+  height: 11px; }
+
+.flag-qa {
+  background: url('flag-79aa9f2606a.png') no-repeat -185px -77px;
+  width: 16px;
+  height: 11px; }
+
+.flag-re {
+  background: url('flag-79aa9f2606a.png') no-repeat -185px -88px;
+  width: 16px;
+  height: 11px; }
+
+.flag-ro {
+  background: url('flag-79aa9f2606a.png') no-repeat -185px -99px;
+  width: 16px;
+  height: 11px; }
+
+.flag-rs {
+  background: url('flag-79aa9f2606a.png') no-repeat -185px -110px;
+  width: 16px;
+  height: 11px; }
+
+.flag-ru {
+  background: url('flag-79aa9f2606a.png') no-repeat -185px -121px;
+  width: 16px;
+  height: 11px; }
+
+.flag-rw {
+  background: url('flag-79aa9f2606a.png') no-repeat -185px -132px;
+  width: 16px;
+  height: 11px; }
+
+.flag-sa {
+  background: url('flag-79aa9f2606a.png') no-repeat -185px -143px;
+  width: 16px;
+  height: 11px; }
+
+.flag-sb {
+  background: url('flag-79aa9f2606a.png') no-repeat -185px -154px;
+  width: 16px;
+  height: 11px; }
+
+.flag-sc {
+  background: url('flag-79aa9f2606a.png') no-repeat -185px -165px;
+  width: 16px;
+  height: 11px; }
+
+.flag-scotland {
+  background: url('flag-79aa9f2606a.png') no-repeat 0 -177px;
+  width: 16px;
+  height: 11px; }
+
+.flag-sd {
+  background: url('flag-79aa9f2606a.png') no-repeat -16px -177px;
+  width: 16px;
+  height: 11px; }
+
+.flag-se {
+  background: url('flag-79aa9f2606a.png') no-repeat -32px -177px;
+  width: 16px;
+  height: 11px; }
+
+.flag-sg {
+  background: url('flag-79aa9f2606a.png') no-repeat -48px -177px;
+  width: 16px;
+  height: 11px; }
+
+.flag-sh {
+  background: url('flag-79aa9f2606a.png') no-repeat -64px -177px;
+  width: 16px;
+  height: 11px; }
+
+.flag-si {
+  background: url('flag-79aa9f2606a.png') no-repeat -80px -177px;
+  width: 16px;
+  height: 11px; }
+
+.flag-sj {
+  background: url('flag-79aa9f2606a.png') no-repeat -96px -177px;
+  width: 16px;
+  height: 11px; }
+
+.flag-sk {
+  background: url('flag-79aa9f2606a.png') no-repeat -112px -177px;
+  width: 16px;
+  height: 11px; }
+
+.flag-sl {
+  background: url('flag-79aa9f2606a.png') no-repeat -128px -177px;
+  width: 16px;
+  height: 11px; }
+
+.flag-sm {
+  background: url('flag-79aa9f2606a.png') no-repeat -144px -177px;
+  width: 16px;
+  height: 11px; }
+
+.flag-sn {
+  background: url('flag-79aa9f2606a.png') no-repeat -160px -177px;
+  width: 16px;
+  height: 11px; }
+
+.flag-so {
+  background: url('flag-79aa9f2606a.png') no-repeat -176px -177px;
+  width: 16px;
+  height: 11px; }
+
+.flag-sr {
+  background: url('flag-79aa9f2606a.png') no-repeat 0 -188px;
+  width: 16px;
+  height: 11px; }
+
+.flag-st {
+  background: url('flag-79aa9f2606a.png') no-repeat -16px -188px;
+  width: 16px;
+  height: 11px; }
+
+.flag-sv {
+  background: url('flag-79aa9f2606a.png') no-repeat -32px -188px;
+  width: 16px;
+  height: 11px; }
+
+.flag-sy {
+  background: url('flag-79aa9f2606a.png') no-repeat -48px -188px;
+  width: 16px;
+  height: 11px; }
+
+.flag-sz {
+  background: url('flag-79aa9f2606a.png') no-repeat -64px -188px;
+  width: 16px;
+  height: 11px; }
+
+.flag-tc {
+  background: url('flag-79aa9f2606a.png') no-repeat -80px -188px;
+  width: 16px;
+  height: 11px; }
+
+.flag-td {
+  background: url('flag-79aa9f2606a.png') no-repeat -96px -188px;
+  width: 16px;
+  height: 11px; }
+
+.flag-tf {
+  background: url('flag-79aa9f2606a.png') no-repeat -112px -188px;
+  width: 16px;
+  height: 11px; }
+
+.flag-tg {
+  background: url('flag-79aa9f2606a.png') no-repeat -128px -188px;
+  width: 16px;
+  height: 11px; }
+
+.flag-th {
+  background: url('flag-79aa9f2606a.png') no-repeat -144px -188px;
+  width: 16px;
+  height: 11px; }
+
+.flag-tj {
+  background: url('flag-79aa9f2606a.png') no-repeat -160px -188px;
+  width: 16px;
+  height: 11px; }
+
+.flag-tk {
+  background: url('flag-79aa9f2606a.png') no-repeat -176px -188px;
+  width: 16px;
+  height: 11px; }
+
+.flag-tl {
+  background: url('flag-79aa9f2606a.png') no-repeat -201px 0;
+  width: 16px;
+  height: 11px; }
+
+.flag-tm {
+  background: url('flag-79aa9f2606a.png') no-repeat -201px -11px;
+  width: 16px;
+  height: 11px; }
+
+.flag-tn {
+  background: url('flag-79aa9f2606a.png') no-repeat -201px -22px;
+  width: 16px;
+  height: 11px; }
+
+.flag-to {
+  background: url('flag-79aa9f2606a.png') no-repeat -201px -33px;
+  width: 16px;
+  height: 11px; }
+
+.flag-tr {
+  background: url('flag-79aa9f2606a.png') no-repeat -201px -44px;
+  width: 16px;
+  height: 11px; }
+
+.flag-tt {
+  background: url('flag-79aa9f2606a.png') no-repeat -201px -55px;
+  width: 16px;
+  height: 11px; }
+
+.flag-tv {
+  background: url('flag-79aa9f2606a.png') no-repeat -201px -66px;
+  width: 16px;
+  height: 11px; }
+
+.flag-tw {
+  background: url('flag-79aa9f2606a.png') no-repeat -201px -77px;
+  width: 16px;
+  height: 11px; }
+
+.flag-tz {
+  background: url('flag-79aa9f2606a.png') no-repeat -201px -88px;
+  width: 16px;
+  height: 11px; }
+
+.flag-ua {
+  background: url('flag-79aa9f2606a.png') no-repeat -201px -99px;
+  width: 16px;
+  height: 11px; }
+
+.flag-ug {
+  background: url('flag-79aa9f2606a.png') no-repeat -201px -110px;
+  width: 16px;
+  height: 11px; }
+
+.flag-um {
+  background: url('flag-79aa9f2606a.png') no-repeat -201px -121px;
+  width: 16px;
+  height: 11px; }
+
+.flag-us {
+  background: url('flag-79aa9f2606a.png') no-repeat -201px -132px;
+  width: 16px;
+  height: 11px; }
+
+.flag-uy {
+  background: url('flag-79aa9f2606a.png') no-repeat -201px -143px;
+  width: 16px;
+  height: 11px; }
+
+.flag-uz {
+  background: url('flag-79aa9f2606a.png') no-repeat -201px -154px;
+  width: 16px;
+  height: 11px; }
+
+.flag-va {
+  background: url('flag-79aa9f2606a.png') no-repeat -201px -165px;
+  width: 16px;
+  height: 11px; }
+
+.flag-vc {
+  background: url('flag-79aa9f2606a.png') no-repeat -201px -176px;
+  width: 16px;
+  height: 11px; }
+
+.flag-ve {
+  background: url('flag-79aa9f2606a.png') no-repeat -201px -187px;
+  width: 16px;
+  height: 11px; }
+
+.flag-vg {
+  background: url('flag-79aa9f2606a.png') no-repeat 0 -199px;
+  width: 16px;
+  height: 11px; }
+
+.flag-vi {
+  background: url('flag-79aa9f2606a.png') no-repeat -16px -199px;
+  width: 16px;
+  height: 11px; }
+
+.flag-vn {
+  background: url('flag-79aa9f2606a.png') no-repeat -32px -199px;
+  width: 16px;
+  height: 11px; }
+
+.flag-vu {
+  background: url('flag-79aa9f2606a.png') no-repeat -48px -199px;
+  width: 16px;
+  height: 11px; }
+
+.flag-wales {
+  background: url('flag-79aa9f2606a.png') no-repeat -64px -199px;
+  width: 16px;
+  height: 11px; }
+
+.flag-wf {
+  background: url('flag-79aa9f2606a.png') no-repeat -80px -199px;
+  width: 16px;
+  height: 11px; }
+
+.flag-ws {
+  background: url('flag-79aa9f2606a.png') no-repeat -96px -199px;
+  width: 16px;
+  height: 11px; }
+
+.flag-ye {
+  background: url('flag-79aa9f2606a.png') no-repeat -112px -199px;
+  width: 16px;
+  height: 11px; }
+
+.flag-yt {
+  background: url('flag-79aa9f2606a.png') no-repeat -128px -199px;
+  width: 16px;
+  height: 11px; }
+
+.flag-za {
+  background: url('flag-79aa9f2606a.png') no-repeat -144px -199px;
+  width: 16px;
+  height: 11px; }
+
+.flag-zm {
+  background: url('flag-79aa9f2606a.png') no-repeat -160px -199px;
+  width: 16px;
+  height: 11px; }
+
+.flag-zw {
+  background: url('flag-79aa9f2606a.png') no-repeat -176px -199px;
+  width: 16px;
+  height: 11px; }
