@@ -43,7 +43,7 @@ Options
 
 #### includePaths
 
-`includePath`s is an `Array` of path Strings to look for any @imported files. 
+`includePaths` is an `Array` of path Strings to look for any @imported files. 
 
 #### httpImagesPath
 
@@ -62,7 +62,13 @@ Options
 
 #### font
 
-`font` is a `String` that represents the public stylesheet path. When using the font-files() or font-url() function in a stylesheet, this path will be prepended to the path you supply.
+`font` is a `String` that represents the public font path. When using the font-files() or font-url() function in a stylesheet, this path will be prepended to the path you supply.
+
+#### spriteDist
+
+`spriteDist` is a `String` that represents the image sprites' path.
+
+
 
 License
 ---------
