@@ -41,18 +41,19 @@ describe('typography', function () {
     });
   });
 
-  // describe('replacement', function () {
-  //   it('should xxx', function (done) {
-  //     compass.render('./test/scss/replacement.scss', {
-  //       success: function (css) {
-  //         compare(css, './test/css/replacement.css');
-  //         done();
-  //       },
-  //       error: function (error) {
-  //         console.log(error);
-  //       }
-  //     });
-  //   });
-  // });
+  describe('replacement', function () {
+    it('should xxx', function (done) {
+      compass.render('./test/scss/replacement.scss', {
+        imagePath: path.join(__dirname, './images'),
+        success: function (css) {
+          compareLine(css, './test/css/replacement.css');
+          done();
+        },
+        error: function (error) {
+          console.log(error);
+        }
+      });
+    });
+  });
 
 });

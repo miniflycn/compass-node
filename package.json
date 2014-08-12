@@ -10,6 +10,7 @@
     "frameworks/**"
   ],
   "dependencies": {
+    "datauri": "^0.5.5",
     "each-async": "^0.1.3",
     "glob": "^4.0.5",
     "image-size": "^0.3.2",

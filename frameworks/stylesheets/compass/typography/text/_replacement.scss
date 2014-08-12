@@ -31,11 +31,11 @@ $hide-text-direction: left !default;
 // and height of the element according the dimensions of the image.
 //
 // If you set `$inline` to true, then an inline image (data uri) will be used.
-@mixin replace-text-with-dimensions($img, $x: 50%, $y: 50%, $inline: false) {
-  @include replace-text(if($inline, inline-image($img), $img), $x, $y);
-  width: image-width($img);
-  height: image-height($img);
-}
+// @mixin replace-text-with-dimensions($img, $x: 50%, $y: 50%, $inline: false) {
+//   @include replace-text(if($inline, inline-image($img), $img), $x, $y);
+//   width: image-width($img);
+//   height: image-height($img);
+// }
 
 // Hides text in an element so you can see the background.
 //

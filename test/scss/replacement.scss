@@ -6,7 +6,8 @@
   @include replace-text-with-dimensions("4x6.png");
 }
 .with-dimensions-inline {
-  @include replace-text-with-dimensions("4x6.png", $inline: true);
+  @include replace-text-with-dimensions("4x6.png", , , true);
+  // TODO: @include replace-text-with-dimensions("4x6.png", $inline: true);
 }
 .with-position {
   @include replace-text("4x6.png", 10px, top);
@@ -15,7 +16,12 @@
   @include replace-text(url(http://google.com/logo.gif), 10px, top);
 }
 .with-inline-url {
-  @include replace-text(inline-image("4x6.png"), 10px, top);
+  @include replace-text(
+  	// TODO: `find` engine couldn't find this
+  	inline-image("4x6.png"),
+  	10px, 
+  	top
+  );
 }
 .with-image-url {
   @include replace-text(image-url("4x6.png"), 10px, top);
