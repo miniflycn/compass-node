@@ -128,8 +128,6 @@ describe('css3', function () {
     });
   });
 
-  // TODO image_size
-
   describe('images', function () {
     it('should xxx', function (done) {
       compass.render('./test/scss/images.scss', {
@@ -165,8 +163,6 @@ describe('css3', function () {
       });
     });
   });
-
-  // TODO sprites
 
   describe('text-shadow', function () {
     it('should xxx', function (done) {
