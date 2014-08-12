@@ -40,7 +40,7 @@ describe('typography', function () {
   //   it('should xxx', function (done) {
   //     compass.render('./test/scss/replacement.scss', {
   //       success: function (css) {
-  //         compareLine(css, './test/css/replacement.css');
+  //         compare(css, './test/css/replacement.css');
   //         done();
   //       },
   //       error: function (error) {
