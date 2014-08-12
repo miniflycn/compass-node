@@ -11,6 +11,7 @@
   li { @include no-bullet; }
 }
 
+// TODO: scss prefix
 // Make a list(ul/ol) have an image bullet.
 //
 // The mixin should be used like this for an icon that is 5x7:
@@ -24,11 +25,11 @@
 //     ul.pretty
 //       +pretty-bullets("my-icon.png")
 //
-@mixin pretty-bullets($bullet-icon, $width: image-width($bullet-icon), $height: image-height($bullet-icon), $line-height: 18px, $padding: 14px) {
-  margin-left: 0;
-  li {
-    padding-left: $padding;
-    background: image-url($bullet-icon) no-repeat ($padding - $width) / 2 ($line-height - $height) / 2;
-    list-style-type: none;
-  }
-}
+// @mixin pretty-bullets($bullet-icon, $width: image-width($bullet-icon), $height: image-height($bullet-icon), $line-height: 18px, $padding: 14px) {
+//   margin-left: 0;
+//   li {
+//     padding-left: $padding;
+//     background: image-url($bullet-icon) no-repeat ($padding - $width) / 2 ($line-height - $height) / 2;
+//     list-style-type: none;
+//   }
+// }
