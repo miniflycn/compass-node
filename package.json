@@ -1,7 +1,7 @@
 {
   "name": "compass-node",
   "repository": "git://github.com/miniflycn/node-compass.git",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "",
   "main": "index.js",
   "files": [
