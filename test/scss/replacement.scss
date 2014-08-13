@@ -16,12 +16,7 @@
   @include replace-text(url(http://google.com/logo.gif), 10px, top);
 }
 .with-inline-url {
-  @include replace-text(
-  	// TODO: `find` engine couldn't find this
-  	inline-image("4x6.png"),
-  	10px, 
-  	top
-  );
+  @include replace-text(inline-image("4x6.png"), 10px, top);
 }
 .with-image-url {
   @include replace-text(image-url("4x6.png"), 10px, top);
