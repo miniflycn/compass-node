@@ -4,3 +4,5 @@ before_install:
 language: node_js
 node_js:
   - "0.10"
+after_script:
+  - make test-coveralls

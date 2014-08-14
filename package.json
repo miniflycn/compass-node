@@ -20,10 +20,16 @@
   },
   "devDependencies": {
     "mocha": "^1.21.3",
-    "should": "^4.0.4"
+    "should": "^4.0.4",
+    "blanket": "1.1.5",
+    "coveralls": "*",
+    "mocha-lcov-reporter": "*"
   },
   "scripts": {
-    "test": "mocha"
+    "test": "mocha",
+    "blanket": {
+      "pattern": "node-compass/lib"
+    }
   },
   "author": "",
   "license": "MIT"
