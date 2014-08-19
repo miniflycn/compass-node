@@ -1,5 +1,5 @@
 [![Build Status](https://travis-ci.org/miniflycn/compass-node.svg?branch=master)](https://travis-ci.org/miniflycn/compass-node)
-[![Coverage Status](https://coveralls.io/repos/miniflycn/node-compass/badge.png)](https://coveralls.io/r/miniflycn/node-compass)
+[![Coverage Status](https://coveralls.io/repos/miniflycn/compass-node/badge.png)](https://coveralls.io/r/miniflycn/ompass-node)
 compass-node
 ============
 
