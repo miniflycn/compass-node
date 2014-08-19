@@ -62,5 +62,6 @@ function render(file, opts) {
 }
 
 module.exports = {
-  render: render
+  render: render,
+  version: require('./package').version
 };
