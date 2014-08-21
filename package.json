@@ -28,7 +28,7 @@
   "scripts": {
     "test": "mocha",
     "blanket": {
-      "pattern": "node-compass/lib"
+      "pattern": "compass-node/lib"
     }
   },
   "author": "",
