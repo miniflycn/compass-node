@@ -69,7 +69,11 @@ Options
 
 `spriteDist` is a `String` that represents the image sprites' path.
 
+Plugins for build system
+------------------------
 
+* [grunt-compassn](https://github.com/miniflycn/grunt-compassn)
+* [gulp-compassn](https://github.com/miniflycn/gulp-compassn)
 
 License
 ---------
