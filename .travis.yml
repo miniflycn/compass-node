@@ -1,8 +1,16 @@
-before_install:
-  - sudo apt-get update
-  - sudo apt-get install libcairo2-dev libjpeg8-dev libpango1.0-dev libgif-dev build-essential g++
 language: node_js
+compiler:
+  - gcc
 node_js:
   - "0.10"
+  - "0.11"
+before_install:
+  - sudo apt-get update;
+  - sudo apt-get install gcc-4.8 g++-4.8;
+  - sudo update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-4.8 20;
+  - sudo update-alternatives --install /usr/bin/g++ g++ /usr/bin/g++-4.8 20;
+  - g++ --version;
+  - sudo apt-get update -qq;
+
 after_script:
   - make test-coveralls
