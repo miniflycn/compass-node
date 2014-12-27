@@ -7,7 +7,7 @@ describe('layout', function () {
     it('should xxx', function (done) {
       compass.render('./test/scss/layout.scss', {
         success: function (css) {
-          compareLine(css, './test/css/layout.css');
+          compareLine(css.css, './test/css/layout.css');
           done();
         }
       });
@@ -18,7 +18,7 @@ describe('layout', function () {
     it('should xxx', function (done) {
       compass.render('./test/scss/stretching.scss', {
         success: function (css) {
-          compareLine(css, './test/css/stretching.css');
+          compareLine(css.css, './test/css/stretching.css');
           done();
         }
       });
