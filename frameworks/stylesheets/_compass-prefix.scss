@@ -87,3 +87,8 @@
   @if $pos == bottom { @return bottom; }
   @if $pos == left { @return right; }
 }
+
+
+@function strip-units($number) {
+  @return $number / ($number * 0 + 1);
+}

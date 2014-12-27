@@ -55,11 +55,11 @@
   column-rule-color: blue; }
 
 .column-rule {
-  -webkit-column-rule: 1px solid #0000ff;
-  -moz-column-rule: 1px solid #0000ff;
-  -ms-column-rule: 1px solid #0000ff;
-  -o-column-rule: 1px solid #0000ff;
-  column-rule: 1px solid #0000ff; }
+  -webkit-column-rule: 1px solid blue;
+  -moz-column-rule: 1px solid blue;
+  -ms-column-rule: 1px solid blue;
+  -o-column-rule: 1px solid blue;
+  column-rule: 1px solid blue; }
 
 .column-rule-spaced {
   -webkit-column-rule: 1px solid blue;
@@ -123,11 +123,11 @@
   column-rule-color: blue; }
 
 .column-rule {
-  -webkit-column-rule: 1px solid #0000ff;
-  -moz-column-rule: 1px solid #0000ff;
-  -ms-column-rule: 1px solid #0000ff;
-  -o-column-rule: 1px solid #0000ff;
-  column-rule: 1px solid #0000ff; }
+  -webkit-column-rule: 1px solid blue;
+  -moz-column-rule: 1px solid blue;
+  -ms-column-rule: 1px solid blue;
+  -o-column-rule: 1px solid blue;
+  column-rule: 1px solid blue; }
 
 .column-rule-spaced {
   -webkit-column-rule: 1px solid blue;
