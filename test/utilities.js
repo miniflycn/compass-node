@@ -7,7 +7,7 @@ describe('utilities', function () {
     it('should xxx', function (done) {
       compass.render('./test/scss/utilities.scss', {
         success: function (css) {
-          compareLine(css, './test/css/utilities.css');
+          compareLine(css.css, './test/css/utilities.css');
           done();
         }
       });
@@ -18,7 +18,7 @@ describe('utilities', function () {
     it('should xxx', function (done) {
       compass.render('./test/scss/legacy_clearfix.scss', {
         success: function (css) {
-          compareLine(css, './test/css/legacy_clearfix.css');
+          compareLine(css.css, './test/css/legacy_clearfix.css');
           done();
         }
       });
@@ -29,7 +29,7 @@ describe('utilities', function () {
     it('should xxx', function (done) {
       compass.render('./test/scss/print.scss', {
         success: function (css) {
-          compareLine(css, './test/css/print.css');
+          compareLine(css.css, './test/css/print.css');
           done();
         }
       });

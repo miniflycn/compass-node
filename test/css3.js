@@ -7,7 +7,7 @@ describe('css3', function () {
     it('should xxx', function (done) {
       compass.render('./test/scss/background-clip.scss', {
         success: function (css) {
-          compareLine(css, './test/css/background-clip.css');
+          compareLine(css.css, './test/css/background-clip.css');
           done();
         },
         error: function (error) {
@@ -21,7 +21,7 @@ describe('css3', function () {
     it('should xxx', function (done) {
       compass.render('./test/scss/border-radius.scss', {
         success: function (css) {
-          compareLine(css, './test/css/border-radius.css');
+          compareLine(css.css, './test/css/border-radius.css');
           done();
         }
       });
@@ -32,7 +32,7 @@ describe('css3', function () {
     it('should xxx', function (done) {
       compass.render('./test/scss/box-shadow.scss', {
         success: function (css) {
-          compareLine(css, './test/css/box-shadow.css');
+          compareLine(css.css, './test/css/box-shadow.css');
           done();
         },
         error: function (error) {
@@ -46,7 +46,7 @@ describe('css3', function () {
     it('should xxx', function (done) {
       compass.render('./test/scss/box-sizeing.scss', {
         success: function (css) {
-          compareLine(css, './test/css/box-sizeing.css');
+          compareLine(css.css, './test/css/box-sizeing.css');
           done();
         }
       });
@@ -57,7 +57,7 @@ describe('css3', function () {
     it('should xxx', function (done) {
       compass.render('./test/scss/box.scss', {
         success: function (css) {
-          compareLine(css, './test/css/box.css');
+          compareLine(css.css, './test/css/box.css');
           done();
         }
       });
@@ -68,7 +68,7 @@ describe('css3', function () {
     it('should xxx', function (done) {
       compass.render('./test/scss/columns.scss', {
         success: function (css) {
-          compareLine(css, './test/css/columns.css');
+          compareLine(css.css, './test/css/columns.css');
           done();
         }
       });
@@ -80,7 +80,7 @@ describe('css3', function () {
     it('should xxx', function (done) {
       compass.render('./test/scss/filters.scss', {
         success: function (css) {
-          compareLine(css, './test/css/filters.css');
+          compareLine(css.css, './test/css/filters.css');
           done();
         }
       });
@@ -93,7 +93,7 @@ describe('css3', function () {
         css: '/tmp/',
         font: '/tmp/fonts/',
         success: function (css) {
-          compareLine(css, './test/css/fonts.css');
+          compareLine(css.css, './test/css/fonts.css');
           done();
         }
       });
@@ -121,7 +121,7 @@ describe('css3', function () {
     it('should xxx', function (done) {
       compass.render('./test/scss/hyphenation.scss', {
         success: function (css) {
-          compareLine(css, './test/css/hyphenation.css');
+          compareLine(css.css, './test/css/hyphenation.css');
           done();
         }
       });
@@ -133,7 +133,7 @@ describe('css3', function () {
       compass.render('./test/scss/images.scss', {
         httpImagesPath: '/images/',
         success: function (css) {
-          compareLine(css, './test/css/images.css');
+          compareLine(css.css, './test/css/images.css');
           done();
         }
       });
@@ -144,7 +144,7 @@ describe('css3', function () {
     it('should xxx', function (done) {
       compass.render('./test/scss/opacity.scss', {
         success: function (css) {
-          compareLine(css, './test/css/opacity.css');
+          compareLine(css.css, './test/css/opacity.css');
           done();
         }
       });
@@ -157,7 +157,7 @@ describe('css3', function () {
     it('should xxx', function (done) {
       compass.render('./test/scss/regions.scss', {
         success: function (css) {
-          compareLine(css, './test/css/regions.css');
+          compareLine(css.css, './test/css/regions.css');
           done();
         }
       });
@@ -168,7 +168,7 @@ describe('css3', function () {
     it('should xxx', function (done) {
       compass.render('./test/scss/text-shadow.scss', {
         success: function (css) {
-          compareLine(css, './test/css/text-shadow.css');
+          compareLine(css.css, './test/css/text-shadow.css');
           done();
         }
       });
@@ -179,7 +179,7 @@ describe('css3', function () {
     it('should xxx', function (done) {
       compass.render('./test/scss/transform.scss', {
         success: function (css) {
-          compareLine(css, './test/css/transform.css');
+          compareLine(css.css, './test/css/transform.css');
           done();
         }
       });
@@ -190,7 +190,7 @@ describe('css3', function () {
     it('should xxx', function (done) {
       compass.render('./test/scss/transition.scss', {
         success: function (css) {
-          compareLine(css, './test/css/transition.css');
+          compareLine(css.css, './test/css/transition.css');
           done();
         }
       });
@@ -201,7 +201,7 @@ describe('css3', function () {
     it('should xxx', function (done) {
       compass.render('./test/scss/user-interface.scss', {
         success: function (css) {
-          compareLine(css, './test/css/user-interface.css');
+          compareLine(css.css, './test/css/user-interface.css');
           done();
         }
       });

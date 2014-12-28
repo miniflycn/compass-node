@@ -47,7 +47,7 @@ $hide-text-direction: left !default;
   @if $direction == left {
     $approximate-em-value: 12px / 1em;
     $wider-than-any-screen: -9999em;
-    text-indent: $wider-than-any-screen * $approximate-em-value;
+    text-indent: strip-units($wider-than-any-screen * $approximate-em-value) * 1px;
     overflow: hidden;
     text-align: left;
   } @else {

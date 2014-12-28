@@ -9,7 +9,7 @@ describe('sprite', function () {
       imagePath: path.join(__dirname, './images'),
       spriteDist: __dirname,
       success: function (css) {
-        compareLine(css, './test/sprite/sprites.css');
+        compareLine(css.css, './test/sprite/sprites.css');
         done();
       },
       error: function (error) {

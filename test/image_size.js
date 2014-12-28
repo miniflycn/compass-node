@@ -8,7 +8,7 @@ describe('image_size', function () {
     compass.render('./test/scss/image_size.scss', {
       imagePath: path.join(__dirname, './images'),
       success: function (css) {
-        compareLine(css, './test/css/image_size.css');
+        compareLine(css.css, './test/css/image_size.css');
         done();
       },
       error: function (error) {

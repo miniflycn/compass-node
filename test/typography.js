@@ -8,7 +8,7 @@ describe('typography', function () {
     it('should xxx', function (done) {
       compass.render('./test/scss/vertical_rhythm.scss', {
         success: function (css) {
-          compareLine(css, './test/css/vertical_rhythm.css');
+          compareLine(css.css, './test/css/vertical_rhythm.css');
           done();
         }
       });
@@ -19,7 +19,7 @@ describe('typography', function () {
     it('should xxx', function (done) {
       compass.render('./test/scss/force-wrap.scss', {
         success: function (css) {
-          compareLine(css, './test/css/force-wrap.css');
+          compareLine(css.css, './test/css/force-wrap.css');
           done();
         }
       });
@@ -31,7 +31,7 @@ describe('typography', function () {
       compass.render('./test/scss/lists.scss', {
         imagePath: path.join(__dirname, './images'),
         success: function (css) {
-          compare(css, './test/css/lists.css');
+          compare(css.css, './test/css/lists.css');
           done();
         },
         error: function (error) {
@@ -46,7 +46,7 @@ describe('typography', function () {
       compass.render('./test/scss/replacement.scss', {
         imagePath: path.join(__dirname, './images'),
         success: function (css) {
-          compareLine(css, './test/css/replacement.css');
+          compareLine(css.css, './test/css/replacement.css');
           done();
         },
         error: function (error) {
