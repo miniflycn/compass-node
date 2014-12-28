@@ -19,6 +19,21 @@ describe('scss', function () {
     });
   });
 
+  describe('nested import', function () {
+    it('should xxx', function (done) {
+      new Scss(
+        fs.readFileSync(path.join(__dirname, './engine/nested-import.scss'), { encoding: 'utf8' }), 
+        {
+          includePaths: [path.join(__dirname, './engine')]
+        }
+      ).done(function (context) {
+        console.log(context);
+        compareLine(context, './test/engine/nested-import-should.scss');
+        done();
+      });
+    });
+  });
+
   describe('custom function', function () {
     it('should xxx', function (done) {
       new Scss(
