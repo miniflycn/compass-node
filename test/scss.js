@@ -27,12 +27,34 @@ describe('scss', function () {
           includePaths: [path.join(__dirname, './engine')]
         }
       ).done(function (context) {
-        console.log(context);
         compareLine(context, './test/engine/nested-import-should.scss');
         done();
       });
     });
   });
+
+  describe('variables', function () {
+    it('should xxx', function (done) {
+      new Scss(
+        fs.readFileSync(path.join(__dirname, './engine/interpolated-variables.scss'), { encoding: 'utf8' }),
+        {
+          includePaths: [path.join(__dirname, './engine')],
+          functions: {
+            'test': function (args) {
+              return '"hello"';
+            },
+            'display-block': function (args) {
+              var arg = args[0];
+              return arg + '-block';
+            }
+          }
+        }
+      ).done(function (context) {
+        compareLine(context, './test/engine/interpolated-variables-should.scss');
+        done();
+      })
+    });
+  })
 
   describe('custom function', function () {
     it('should xxx', function (done) {
