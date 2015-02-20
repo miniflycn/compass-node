@@ -3,6 +3,8 @@
 compass-node
 ============
 
+> This is a Compass preprocessor to convert stylesheets to general sass and let node-sass can compile. Because node-sass doesn't support custom function & custom import, we just use a ugly way to finish it.
+
 Install
 -------
 
