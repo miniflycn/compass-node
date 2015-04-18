@@ -6,7 +6,7 @@ var compass = require('../')
 describe('sprite', function () {
   it('should xxx', function (done) {
     compass.render('./test/sprite/sprites.scss', {
-      imagePath: path.join(__dirname, './images'),
+      imagePath: path.join(__dirname),
       spriteDist: __dirname,
       success: function (css) {
         compareLine(css.css, './test/sprite/sprites.css');
