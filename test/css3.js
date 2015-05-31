@@ -28,20 +28,19 @@ describe('css3', function () {
     });
   });
 
-  // #issue compact is not exist?
-  // describe('box-shadow', function () {
-  //   it('should xxx', function (done) {
-  //     compass.render('./test/scss/box-shadow.scss', {
-  //       success: function (css) {
-  //         compareLine(css.css, './test/css/box-shadow.css');
-  //         done();
-  //       },
-  //       error: function (error) {
-  //         console.log(error)
-  //       }
-  //     });
-  //   });
-  // });
+  describe('box-shadow', function () {
+    it('should xxx', function (done) {
+      compass.render('./test/scss/box-shadow.scss', {
+        success: function (css) {
+          compareLine(css.css, './test/css/box-shadow.css');
+          done();
+        },
+        error: function (error) {
+          console.log(error)
+        }
+      });
+    });
+  });
 
   describe('box-sizeing', function () {
     it('should xxx', function (done) {
@@ -65,29 +64,28 @@ describe('css3', function () {
     });
   });
 
-  // #issue compact is not exist, too
-  // describe('columns', function () {
-  //   it('should xxx', function (done) {
-  //     compass.render('./test/scss/columns.scss', {
-  //       success: function (css) {
-  //         compareLine(css.css, './test/css/columns.css');
-  //         done();
-  //       }
-  //     });
-  //   });
-  // });
+  describe('columns', function () {
+    it('should xxx', function (done) {
+      compass.render('./test/scss/columns.scss', {
+        success: function (css) {
+          compareLine(css.css, './test/css/columns.css');
+          done();
+        }
+      });
+    });
+  });
 
-  // // grayscale didn't implement
-  // describe('filters', function () {
-  //   it('should xxx', function (done) {
-  //     compass.render('./test/scss/filters.scss', {
-  //       success: function (css) {
-  //         compareLine(css.css, './test/css/filters.css');
-  //         done();
-  //       }
-  //     });
-  //   });
-  // });
+  // grayscale didn't implement
+  describe('filters', function () {
+    it('should xxx', function (done) {
+      compass.render('./test/scss/filters.scss', {
+        success: function (css) {
+          compareLine(css.css, './test/css/filters.css');
+          done();
+        }
+      });
+    });
+  });
 
   describe('fonts', function () {
     it('should xxx', function (done) {
@@ -102,20 +100,20 @@ describe('css3', function () {
     });
   });
 
-  // // TODO gradients(CSS3)
-  // // describe('gradients', function () {
-  // //   it('should xxx', function (done) {
-  // //     compass.render('./test/scss/gradients.scss', {
-  // //       success: function (css) {
-  // //         compare(css, './test/css/gradients.css');
-  // //         done();
-  // //       },
-  // //       error: function (error) {
-  // //         console.log(error);
-  // //       }
-  // //     });
-  // //   });
-  // // });
+  // TODO gradients(CSS3)
+  // describe('gradients', function () {
+  //   it('should xxx', function (done) {
+  //     compass.render('./test/scss/gradients.scss', {
+  //       success: function (css) {
+  //         compare(css, './test/css/gradients.css');
+  //         done();
+  //       },
+  //       error: function (error) {
+  //         console.log(error);
+  //       }
+  //     });
+  //   });
+  // });
 
   // // TODO grid-background
 
@@ -167,16 +165,16 @@ describe('css3', function () {
   });
 
   // #issue compact
-  // describe('text-shadow', function () {
-  //   it('should xxx', function (done) {
-  //     compass.render('./test/scss/text-shadow.scss', {
-  //       success: function (css) {
-  //         compareLine(css.css, './test/css/text-shadow.css');
-  //         done();
-  //       }
-  //     });
-  //   });
-  // });
+  describe('text-shadow', function () {
+    it('should xxx', function (done) {
+      compass.render('./test/scss/text-shadow.scss', {
+        success: function (css) {
+          compareLine(css.css, './test/css/text-shadow.css');
+          done();
+        }
+      });
+    });
+  });
 
   describe('transform', function () {
     it('should xxx', function (done) {

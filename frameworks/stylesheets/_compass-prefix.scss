@@ -92,3 +92,20 @@
 @function strip-units($number) {
   @return $number / ($number * 0 + 1);
 }
+
+// come from: https://github.com/Igosuki/compass-mixins/issues/34
+@function compact($vars...) {
+  $first: nth($vars, 1);
+  $sep: comma;
+  $list: ();
+  @if length($vars) == 1 and type_of($first) == 'list' {
+    $vars: $first;
+    $sep: list-separator($vars);
+  }
+  @each $var in $vars {
+    @if $var {
+        $list: append($list, $var, $sep);
+    }
+  }
+  @return $list;
+}
