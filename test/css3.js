@@ -164,7 +164,6 @@ describe('css3', function () {
     });
   });
 
-  // #issue compact
   describe('text-shadow', function () {
     it('should xxx', function (done) {
       compass.render('./test/scss/text-shadow.scss', {
@@ -187,17 +186,16 @@ describe('css3', function () {
     });
   });
 
-  // #issue compact
-  // describe('transition', function () {
-  //   it('should xxx', function (done) {
-  //     compass.render('./test/scss/transition.scss', {
-  //       success: function (css) {
-  //         compareLine(css.css, './test/css/transition.css');
-  //         done();
-  //       }
-  //     });
-  //   });
-  // });
+  describe('transition', function () {
+    it('should xxx', function (done) {
+      compass.render('./test/scss/transition.scss', {
+        success: function (css) {
+          compareLine(css.css, './test/css/transition.css');
+          done();
+        }
+      });
+    });
+  });
 
   describe('user-interface', function () {
     it('should xxx', function (done) {
