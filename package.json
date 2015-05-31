@@ -1,7 +1,7 @@
 {
   "name": "compass-node",
   "repository": "git://github.com/miniflycn/node-compass.git",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "description": "compass-node",
   "main": "index.js",
   "files": [
@@ -14,7 +14,7 @@
     "each-series": "*",
     "glob": "^4.0.5",
     "image-size": "^0.3.2",
-    "node-sass": "^2.0.0-beta",
+    "node-sass": "2.0.1",
     "spritesmith": "^0.19.2",
     "utils-merge": "^1.0.0"
   },
