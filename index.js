@@ -49,15 +49,17 @@ function render(file, opts) {
     ].join('\n'); 
 
     sass.render(merge(param, opts, [
-      'success',
-      'error',
       'imagePath',
       'outputStyle',
       'precision',
       'sourceComments',
       'sourceMap',
       'stats'
-    ]));
+    ]), function (err, result) {
+      if (err && opts.error) return opts.error(err);
+      result.css = result.css.toString();
+      opts.success(result);
+    });
   });
 }
 

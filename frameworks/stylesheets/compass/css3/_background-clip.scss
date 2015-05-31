@@ -27,16 +27,16 @@ $default-background-clip: padding-box !default;
   @include experimental(background-clip, $deprecated,
     -moz,
     -webkit,
-    false,
-    false,
-    false,
-    false
+    not(-o),
+    not(-ms),
+    not(-khtml),
+    not official
   );
   @include experimental(background-clip, $clip,
-    false,
-    false,
-    false,
-    false,
+    not(-moz),
+    not(-webkit),
+    not(-o),
+    not(-ms),
     -khtml,
     official
   );
