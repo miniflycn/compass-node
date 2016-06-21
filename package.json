@@ -10,13 +10,6 @@
     "frameworks/**"
   ],
   "dependencies": {
-    "datauri": "^0.5.5",
-    "each-series": "*",
-    "glob": "^4.0.5",
-    "image-size": "^0.3.2",
-    "node-sass": "2.0.1",
-    "spritesmith": "^0.19.2",
-    "utils-merge": "^1.0.0"
   },
   "devDependencies": {
     "blanket": "1.1.5",
@@ -26,7 +19,6 @@
     "should": "^4.4.1"
   },
   "scripts": {
-    "test": "mocha",
     "blanket": {
       "pattern": "compass-node/lib"
     }
